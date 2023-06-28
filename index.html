@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS  -->
+    
+
+    <title>Concession</title>
+  <link rel="stylesheet" href="/assets/index-2fdcab9c.css">
+</head>
+<body class="bg-gray-100">
+    <div class="h-fit sm:mx-auto sm:w-[600px]  bg-white px-8 py-4 sm:my-6 sm:rounded-xl ">
+        <div class="container items-start justify-start py-4 flex flex-col space-y-6 w-76">
+            <div class="heading mb-2 mt-2 w-full">
+                <h1 class="text-3xl font-semibold text-black mt-1 mb-2">Get concession</h1>
+                <h3 class="text-sm text-gray-500 font-normal ">Enter fees amount, rate of Concession, & number of months fees paid.</h3>
+            </div>
+        
+            <div class="fees w-full">
+                <div class="py-2 fotext-sm text-gray-500 font-normal">Fees Amount</div>
+                <input type="text" id="fees" name="fees" placeholder="e.g. 3124" class="px-3 py-2 w-full   rounded-md border border-gray-300 focus:outline outline-blue-600" id="">
+            </div>
+            <div class="percentage w-full">
+                <div class="py-2 fotext-sm text-gray-500 font-normal">Percentage of Concession</div>
+                <input type="text" id="percentage" name="concession" placeholder="e.g. 5%" class="px-3 py-2 w-full rounded-md border  border-gray-300 focus:outline outline-blue-600" id="">
+            </div>
+            <div class="months-paid w-full">
+                <div class="py-2 fotext-sm text-gray-500 font-normal">Number of months fees paid</div>
+                <input type="text" id="paid-months" placeholder="e.g. 3 (June-August)" name="fees-paid" class="px-3 py-2 w-full  rounded-md border border-gray-300 focus:outline outline-blue-600" id="">
+            </div>
+            <div class="submit-btn  w-full">
+                <div class="flex flex-row justify-between">
+                    <button class="bg-blue-500 text-white px-4 py-2 text-md font-semibold rounded-lg" onclick="getConcession()" >Get concession</button>
+                    <button class="bg-gray-100 text-gray-400 px-4 py-2 rounded-lg text-md" onclick="clearAllEnteries()">Clear</button>
+                </div>
+                <div class="my-4"><input id="concession" name="concession" placeholder="Click: Get concession" disabled class="px-3 py-2 w-full rounded-md border border-gray-300"></div>
+            </div>
+            
+        </div>
+    </div>
+    <script src="/assets/scripts.js"></script>
+</body>
+</html>
